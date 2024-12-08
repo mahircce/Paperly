@@ -138,6 +138,7 @@ header ul li a:hover {
     }
 }
 
+
 #chk1 {
     display: none;
 }
@@ -211,6 +212,18 @@ header .menu {
     cursor: pointer;
 }
 
+header .menu label i {
+    font-size: 1.5em;
+    color: #fff; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+header .menu label i:hover {
+    color: #0078D4;
+}
+
 /* Responsive styles */
 @media (max-width: 1000px) {
     header ul {
@@ -231,11 +244,18 @@ header .menu {
         display: block;
     }
 
+    header .menu label {
+        cursor: pointer;
+    }
+    
+
     #chk1:checked ~ ul {
         right: 0;
     }
-
     
+    header .menu label i:hover {
+        color: #0078D4; 
+    }
 
     .search-box {
         padding-bottom: 50px;
