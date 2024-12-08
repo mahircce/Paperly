@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrika Ghar</title>
     <link rel="stylesheet" href="epaper.css">
-    <link rel="shortcut icon" href="Favicon3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Favicon-3.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -42,40 +42,84 @@
   
 </head>
 <body>
-  <div class="container">
-    <h2>Select a Newspaper</h2>
-    <select id="newspaperDropdown">
-      <option value="" disabled selected>Select a newspaper</option>
-      <option value="https://www.jugantor.com/">Daily Jugantor</option>
-      <option value="https://ebhorerkagoj.com/">Daily Bhorer Kagoj</option>
-      <option value="https://samakal.com/">Daily Samakal</option>
-      <option value="https://kholakagojbd.com/">Daily Kholakagoj</option>
-      <option value="https://www.ittefaq.com.bd/">Daily Ittefaq</option>
-      <option value="https://www.bd-pratidin.com/">Daily Bangladesh Pratidin</option>
-      <option value="https://sokalerbani.com/">Daily Sokaler Bani</option>
-      <option value="https://epaper.bangladesherkhabor.net/">Daily Bangladesher Khabor</option>
-      <option value="https://dailyjanobani.com/">Daily Janobani</option>
-      <option value="https://www.khaborerkagoj.com/">Daily Khaborerkagoj</option>
-    </select>
-
-    <iframe id="epaperViewer" src="" title="ePaper Viewer"><h1>Epaper</h1></iframe>
-  </div>
+    <div class="container">
+        <h2>Select a Newspaper</h2>
+        <select id="newspaperDropdown">
+            <option value="" disabled selected>ই-পেপার দেখতে পত্রিকা নির্বাচন করুন</option>
+            <option value="https://www.dailyinqilab.com/epaper/new.php">দৈনিক ইনকিলাব</option>
+            <option value="https://epaper.jugantor.com/">দৈনিক যুগান্তর</option>
+            <option value="https://epaper.samakal.com/">দৈনিক সমকাল</option>
+            <option value="https://epaper.ittefaq.com.bd/">দৈনিক ইত্তেফাক</option>
+            <option value="https://epaper.prothomalo.com/">দৈনিক প্রথম আলো</option>
+            <option value="https://epaper.thedailystar.net/">দ্য ডেইলি স্টার</option>
+            <option value="https://www.ebdpratidin.com/">দৈনিক বাংলাদেশ প্রতিদিন</option>
+            <option value="https://epaper.khaborerkagoj.com/">খবরের কাগজ</option>
+            <option value="http://epaper.bangladesherkhabor.net/">বাংলাদেশের খবর</option>
+            <option value="https://epaper.sokalerbani.com/">দৈনিক সকালের বাণী</option>
+            <option value="https://edailyjanobani.com/">দৈনিক জনবাণী</option>
+            <option value="https://epaper.dailysabujbangla.com/">দৈনিক সবুজ বাংলা</option>
+            <option value="https://www.ekalerkantho.com/">দৈনিক কালের কণ্ঠ</option>
+            <option value="https://epaper.ajkerpatrika.com/">দৈনিক আজকের পত্রিকা</option>
+            <option value="http://ekholakagoj.com/epaper/">দৈনিক খোলা কাগজ</option>
+            <option value="https://ebhorerkagoj.com/">দৈনিক ভোরের কাগজ</option>
+            <option value="https://epaper.dainikamadershomoy.com/">দৈনিক আমাদের সময়</option>
+            <option value="https://www.ejjdin.com/">দৈনিক যায় যায় দিন</option>
+            <option value="https://epaper.manobkantha.com.bd/">দৈনিক মানবকণ্ঠ</option>
+            <option value="http://www.manbhumsambad.com/">দৈনিক মানভূম</option>
+            <option value="https://edainikazadi.net/">দৈনিক আজাদী</option>
+            <option value="https://epurbodesh.com/">দৈনিক পূর্বদেশ</option>
+            <option value="https://www.edainikpurbokone.net/">দৈনিক পূর্বকোণ</option>
+            <option value="https://epaper.dailyjanakantha.com/">দৈনিক জনকন্ঠ</option>
+            <option value="https://epaper.dailysangram.com/">দৈনিক সংগ্রাম</option>
+            <option value="https://epaper.deshrupantor.com/">দৈনিক দেশ রূপান্তর</option>
+            <option value="https://www.enayadiganta.com/">দৈনিক নয়া দিগন্ত</option>
+            <option value="https://epaper.protidinerbangladesh.com/">দৈনিক প্রতিদিনের বাংলাদেশ</option>
+            <option value="https://epaper.dainikbangla.com.bd/">দৈনিক বাংলা</option>
+            <option value="https://nagorikvabna.com/epaper/">দৈনিক নাগরিক ভাবনা</option>
+            <option value="https://www.ekaratoa.com/">দৈনিক করতোয়া</option>
+            <option value="https://eamarsangbad.com/">দৈনিক আমার সংবাদ</option>
+            <option value="https://epaper.alokitobangladesh.com/">দৈনিক আলোকিত বাংলাদেশ</option>
+            <option value="https://epaper.dailyfulki.com/">দৈনিক ফুলকি</option>
+            <option value="https://esatghoria.com/">দৈনিক সাতঘরিয়া</option>
+            <option value="https://epaper.kalbela.com/">দৈনিক কালবেলা</option>
+            <option value="https://edainikjugeralo.com/">দৈনিক যুগের আলো</option>
+            <option value="https://epaper.deshkalbd.com/">দৈনিক দেশকাল</option>
+            <option value="https://esuprobhat.com/">দৈনিক সুপ্রভাত</option>
+            <option value="https://epaper.alokitoprotidin.com/">দৈনিক আলোকিত প্রতিদিন</option>
+            <option value="https://epaper.shomoyeralo.com/">দৈনিক সময়ের আলো</option>
+            <option value="https://epaper.dailydeshtottoh.com/">দৈনিক দেশতথ্য</option>
+            <option value="https://ebhorerdarpan.com/">দৈনিক ভোরের দর্পণ</option>
+            <option value="https://epaper.bd-bulletin.com/">বাংলাদেশ বুলেটিন</option>
+            <option value="https://epaper.protidinersangbad.com/">দৈনিক প্রতিদিনের সংবাদ</option>
+            <option value="https://epaper.ajkalerkhobor.net/">দৈনিক আজকালের খবর</option>
+            <option value="https://epaper.sangbad.net.bd/">দৈনিক সংবাদ</option>
+            <option value="http://www.dindarpan.com/">দৈনিক দিনদর্পণ</option>
+            <option value="https://epaper.sahos24.com/">দৈনিক সাহস</option>
+            <option value="https://esylheterdak.com/">দৈনিক সিলেটের ডাক</option>
+            <option value="https://epaper.alokitosakal.net/">দৈনিক আলোকিত সকাল</option>
+            <option value="https://eshyamalsylhet.com/">দৈনিক শ্যামল সিলেট</option>
+          </select>
+    
+        <iframe id="epaperViewer" src="" title="ePaper Viewer"></iframe>
+      </div>
+    
 
   <footer>
     <p>&copy; 2024 PatrikaGhar</p>
 </footer>
 
   <script>
-    // Get references to the dropdown and iframe
+    
     const dropdown = document.getElementById("newspaperDropdown");
     const iframe = document.getElementById("epaperViewer");
 
-    // Listen for changes in the dropdown
+    
     dropdown.addEventListener("change", function () {
       const selectedURL = dropdown.value;
       if (selectedURL) {
         iframe.src = selectedURL;
       }
+
     });
   </script>
 </body>
