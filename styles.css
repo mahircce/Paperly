@@ -207,13 +207,13 @@ header ul li a:hover {
 }
 
 header .menu {
-    font-size: 2.5em;
+    font-size: 1.5em;
     display: none;
     cursor: pointer;
 }
 
 header .menu label i {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff; 
     cursor: pointer;
     transition: color 0.3s ease;
@@ -316,8 +316,10 @@ main {
 
 .container .box-container .box p{
     color: #777;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
+    text-justify: auto;
+    text-align: justify;
 }
 
 .container .box-container .box img{
