@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrika Ghar</title>
+    <link rel="stylesheet" href="epaper.css">
+    <link rel="shortcut icon" href="Favicon-3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="chk1">
+        <div class="logo">
+        <img src="Patrikaghar-logo.png" alt="patrikaghar">
+            
+        </div>
+        
+        <ul>
+            <li><a href="index.html">মূল-পাতা</a></li>
+            <li><a href="epaper.html">ইপেপার</a></li>
+            <li><a href="email.html">পত্রিকায়-লিখুন</a></li>
+            <li><a href="event.html">ইভেন্ট</a></li>
+            <li><a href="contact.html">যোগাযোগ</a></li>
+            <li>
+                <div class="search-box">
+                    <form action="index.html" method="GET" id="searchForm">
+                        <input type="text" name="search" id="srch" placeholder="Search here...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars menu icon"></i>
+        
+            </label>
+        </div>
+     </header>
+  
+</head>
+<body>
+  <div class="container">
+    <h2>Select a Newspaper</h2>
+    <select id="newspaperDropdown">
+      <option value="" disabled selected>Select a newspaper</option>
+      <option value="https://www.jugantor.com/">Daily Jugantor</option>
+      <option value="https://ebhorerkagoj.com/">Daily Bhorer Kagoj</option>
+      <option value="https://samakal.com/">Daily Samakal</option>
+      <option value="https://kholakagojbd.com/">Daily Kholakagoj</option>
+      <option value="https://www.ittefaq.com.bd/">Daily Ittefaq</option>
+      <option value="https://www.bd-pratidin.com/">Daily Bangladesh Pratidin</option>
+      <option value="https://sokalerbani.com/">Daily Sokaler Bani</option>
+      <option value="https://epaper.bangladesherkhabor.net/">Daily Bangladesher Khabor</option>
+      <option value="https://dailyjanobani.com/">Daily Janobani</option>
+      <option value="https://www.khaborerkagoj.com/">Daily Khaborerkagoj</option>
+    </select>
+
+    <iframe id="epaperViewer" src="" title="ePaper Viewer"><h1>Epaper</h1></iframe>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 PatrikaGhar</p>
+</footer>
+
+  <script>
+    // Get references to the dropdown and iframe
+    const dropdown = document.getElementById("newspaperDropdown");
+    const iframe = document.getElementById("epaperViewer");
+
+    // Listen for changes in the dropdown
+    dropdown.addEventListener("change", function () {
+      const selectedURL = dropdown.value;
+      if (selectedURL) {
+        iframe.src = selectedURL;
+      }
+    });
+  </script>
+</body>
+</html>
