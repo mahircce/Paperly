@@ -40,6 +40,8 @@ body {
 h2 {
     background-color: #ccc;
     color: #0078D4;
+    border-radius: 5px;
+    padding: 20px 20px;
 }
 
 /* Header styles */
@@ -293,13 +295,104 @@ header .menu label i:hover {
   iframe {
     background-color: #ffffff;;
 
-    height: 100vh;
+    height: 1000px;
     width: 100%;
     border: solid black;
     margin-top: 1rem;
     border-radius: 5px;
     box-shadow: 2px 4px 8px rgba(56, 27, 27, 0.6);
   }
+
+
+/*newspaper epaper link*/
+.newspaper-grid {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat();
+    gap: 10px;
+    padding: 20px;
+  }
+
+  main {
+    padding: 10px;
+    flex: 1;
+    width: 260px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+}
+  
+  @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .grid {
+        margin: 0%;
+        align-items: center;
+        
+        
+    }
+}
+  .newspaper-grid a {
+    font-family: "myfont";
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    display: flexbox ;
+    height: 80px;
+    width: 150px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newspaper-grid a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.03);
+  }
+
+  .grid-header{
+    text-align: center;
+    color: #f4f4f4;
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  #web{
+    text-decoration: dotted;
+    
+  }
+  .grid-header:hover{
+    background-color: #ecf0f1;
+    color: #3498db;
+  }
+  
+  @media (max-width: 768px) {
+    .newspaper-grid {
+      grid-template-columns: repeat(2, auto);
+      
+    }
+    
+  }
+  
+  @media (max-width: 576px) {
+    .newspaper-grid {
+      grid-template-columns: repeat(2,auto);
+      
+    }
+
+  }
+
 
   footer {
     text-align: center;
