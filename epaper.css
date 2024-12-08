@@ -32,7 +32,7 @@ body {
 /* General styles */
 body {
     margin: 0;
-    font-family: ;
+    font-family: "myfont";
     background-color: #fdf8f3;
     color: #000;
 }
@@ -283,9 +283,16 @@ header .menu label i:hover {
     width: 100%;
   }
 
+  option{
+    color: #ffffff;
+    background-color: #0078D4;
+    font-family: 'myfont';
+  }
+
   iframe {
-    
-    height: 1000px;
+    background-color: #ffffff;;
+
+    height: 100vh;
     width: 100%;
     border: solid black;
     margin-top: 1rem;
