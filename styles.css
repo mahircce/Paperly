@@ -276,7 +276,12 @@ main {
     display: grid;
     justify-content: center;
 }
-
+/* about style */
+.imageone{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
 /*Description Box*/
 .container{
     background: linear-gradient(45deg,#FBF9FA,#0056b3);
