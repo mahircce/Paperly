@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrika Ghar</title>
+    <title>PatrikaGhar</title>
     <link rel="stylesheet" href="epaper.css">
-    <link rel="shortcut icon" href="Favicon3.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Favicon5.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <input type="checkbox" id="chk1">
         <div class="logo">
-        <img src="Patrikaghar-logo.png" alt="patrikaghar">
+          <a href="#"><img src="Patrikaghar-logo.png" alt="patrikaghar"></a>
             
         </div>
         
@@ -43,7 +43,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>ই-পেপার পড়ুন পত্রিকাঘরে অথবা ই-পেপারগুলোর <a href="#web">লিংক</a> দেখুন</h2>
+        <h2>ইপেপার পড়ুন পত্রিকাঘরে অথবা ইপেপারগুলোর <a href="#web">লিংক</a> দেখুন</h2>
         <select id="newspaperDropdown">
             <option value="" disabled selected>ই-পেপার দেখতে পত্রিকা নির্বাচন করুন</option>
             <option value="https://www.dailyinqilab.com/epaper/new.php">দৈনিক ইনকিলাব</option>
@@ -105,7 +105,7 @@
 
       <section class="grid">
         <div class="grid-header">
-          <h1>বাংলাদেশের দৈনিক পত্রিকার <a id="web" href="#">ই-পেপার</a></h1>
+          <h1>বাংলাদেশের দৈনিক পত্রিকার <a id="web" href="#">ইপেপার</a></h1>
         </div>
         <div class="newspaper-grid">
           <a href="https://www.dailyinqilab.com/epaper/new.php" target="_blank">দৈনিক ইনকিলাব</a>
@@ -146,9 +146,28 @@
       </section>
     
 
-  <footer>
-    <p>&copy; 2024 PatrikaGhar</p>
-</footer>
+      <footer>
+        <div class="footer-content">
+            <a href="#"><img src="Patrikaghar-logo.png" class="logo2" alt="Patrika ghar"></a>
+            <p>লিখুন পত্রিকাঘর হতে পত্রিকায়</p>
+            
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required name="" id="email-id">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+            
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;Patrikaghar - 2024 || All Rights Reserved || A project by <a href="https://github.com/thmahirofficial" target="_blank">@thmahir</a> & <a href="https://github.com/Mikdad-12" target="_blank">@mikdad</a></p>
+    </footer>
 
   <script>
     
