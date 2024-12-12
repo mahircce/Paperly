@@ -27,18 +27,28 @@ body {
     font-family: myfont;
     src: url(TiroBangla-Regular.ttf);
 }
+
+@font-face {
+    font-family: anekbangla regular;
+    src: url(AnekBangla_Condensed-Regular.ttf);
+}
   
+@font-face{
+    font-family: anekbangla bold;
+    src: url(AnekBangla_Condensed-Bold.ttf);
+}
 
 /* General styles */
 body {
     margin: 0;
-    font-family: 'myfont' ;
+    font-family: ;
     background-color: #fdf8f3;
     color: #000;
 }
 
 /* Header styles */
 header {
+    font-family: "myfont";
     width: 100%;
     height: 100px;
     display: flex;
@@ -63,9 +73,11 @@ header .search-box form {
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+    font-family: 'myfont';
 }
 
 header .search-box input {
+    font-family: 'myfont';
     width: 100%;
     padding: 10px 15px;
     border-radius: 20px;
@@ -87,7 +99,7 @@ header .search-box button {
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    background: #007BFF;
+    background: #0078D4;
     border: none;
     color: white;
     border-radius: 50%;
@@ -102,19 +114,19 @@ header .search-box button {
 }
 
 header .search-box button:hover {
-    background: #0056b3;
+    background: #014981;
 }
 
 /* Social Media Icons */
 header ul li a {
     margin: 0 5px;
-    color: #007BFF;
+    color: #0078D4;
     font-size: 18px;
     text-decoration: none;
 }
 
 header ul li a:hover {
-    color: #0056b3;
+    color: #0078D4;
 }
 
 /* Responsive Search Box Styles */
@@ -181,7 +193,7 @@ header ul li .search-box input {
     position: absolute;
     top: 5px;
     right: 5px;
-    background: green;
+    background: rgb(13, 0, 128);
 }
 
 header ul {
@@ -203,7 +215,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    border-bottom: 2px solid rgb(19, 212, 19);
+    border-bottom: 2px solid rgb(236, 241, 236);
 }
 
 header .menu {
@@ -369,6 +381,8 @@ header .menu label i:hover {
 }
 
 @media (max-width: 768px) {
+     
+
 
     .devloperbox{
         margin-top: 200px;
@@ -534,11 +548,156 @@ header .menu label i:hover {
    }
   }
 
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding-bottom: 20px;
+ /* Footer */
+footer {
+    width: 100%;
     position: relative;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: #ccc;
+    padding: 40px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.logo2 {
+    
+    width: 80px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
+    
+    line-height: 1.5;
+    text-align: justify; 
+}
+
+footer p a {
+    color: #ccc ;
+
+}
+
+footer p a:hover{
+    color: #ecf0f1;
+    text-transform: uppercase;
+
+}
+
+.newsletter {
+    width: ;
+    max-width: 400px;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background: #0056b3;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+footer form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer form .far {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #0078D4;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    outline: none;
+    border: 0;
+}
+
+footer form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+footer form button .fas {
+    font-size: 16px;
+    color: #ccc;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+footer .copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .logo2 {
+        width: 60px;
+    }
+
+    .social-icons .fab {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 5px;
+        font-size: 12px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer .copyright {
+        font-size: 10px;
+    }
 }
