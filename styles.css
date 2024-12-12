@@ -48,6 +48,7 @@ body {
 
 /* Header styles */
 header {
+    font-family: "myfont";
     width: 100%;
     height: 100px;
     display: flex;
@@ -72,9 +73,11 @@ header .search-box form {
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+    font-family: 'myfont';
 }
 
 header .search-box input {
+    font-family: 'myfont';
     width: 100%;
     padding: 10px 15px;
     border-radius: 20px;
@@ -96,7 +99,7 @@ header .search-box button {
     right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    background: #007BFF;
+    background: #0078D4;
     border: none;
     color: white;
     border-radius: 50%;
@@ -111,19 +114,19 @@ header .search-box button {
 }
 
 header .search-box button:hover {
-    background: #0056b3;
+    background: #014981;
 }
 
 /* Social Media Icons */
 header ul li a {
     margin: 0 5px;
-    color: #007BFF;
+    color: #0078D4;
     font-size: 18px;
     text-decoration: none;
 }
 
 header ul li a:hover {
-    color: #0056b3;
+    color: #0078D4;
 }
 
 /* Responsive Search Box Styles */
@@ -190,7 +193,7 @@ header ul li .search-box input {
     position: absolute;
     top: 5px;
     right: 5px;
-    background: green;
+    background: rgb(13, 0, 128);
 }
 
 header ul {
@@ -212,7 +215,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    border-bottom: 2px solid rgb(19, 212, 19);
+    border-bottom: 2px solid rgb(236, 241, 236);
 }
 
 header .menu {
@@ -290,8 +293,8 @@ main {
 
 /*Description Box*/
 .container{
-    background: linear-gradient(45deg,#FBF9FA,#0056b3);
-    padding: 8%;
+    background: linear-gradient(360deg,#ccc,#0078D4);
+    padding: 5%;
     padding-bottom: 100px;
 
 }
@@ -316,7 +319,9 @@ main {
     border-radius: 5px;
     background: #fff;
     text-align: center;
-    padding: 30px 20px;
+    padding:30px 20px;
+    width: 100%;
+   
 }
 
 .container .box-container .box h3{
@@ -331,20 +336,32 @@ main {
     line-height: 1.8;
     text-justify: auto;
     text-align: justify;
+    height: 150px;
 }
 
 .container .box-container .box img{
     height: 80px;
+    margin-bottom: ;
+    
 }
 
 .container .box-container .box .btn{
     margin-top: 10px;
+    
     display: inline-block;
-    background: #333;
+    background: #0078D4;
     color: #fff;
     font-size: 17px;
     border-radius: 5px;
+    
     padding: 8px 25px;
+
+}
+
+
+
+.container .btn:hover{
+    box-shadow: 2px 4px 10px #444
 }
 
 .container .box-container .box .btn:hover{
@@ -389,7 +406,7 @@ main {
   }
   
   .newspaper-grid a:hover {
-    background-color: #3498db;
+    background-color: #0078D4;
     color: #fff;
     transform: scale(1.03);
   }
@@ -397,7 +414,7 @@ main {
   .grid-header{
     text-align: center;
     color: #f4f4f4;
-    background-color: #3498db;
+    background-color: #0078D4;
     padding: 20px;
     border-radius: 5px;
   }
@@ -407,7 +424,7 @@ main {
   }
   .grid-header:hover{
     background-color: #ecf0f1;
-    color: #3498db;
+    color: #0078D4;
   }
   
   @media (max-width: 768px) {
@@ -528,7 +545,7 @@ header h1 {
     background: #faf8f8;
     padding: 20px;
     max-width: 1368px;
-    width: 80%;
+    width: 90%;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 20px;
