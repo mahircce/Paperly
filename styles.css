@@ -1,589 +1,261 @@
-body {
-    font-family:"myfont" ;
-    margin: 0;
-    padding: 0;
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('albdnewspaper.png') no-repeat center center fixed;
-    background-size: cover;
-    background-color: #333;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-/* Home page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-   
-    background-color: #f4f4f4;
-  }
-  
-@font-face {
-    font-family: myfont;
-    src: url(TiroBangla-Regular.ttf);
-}
-  
-
-/* General styles */
-body {
-    margin: 0;
-    font-family: ;
-    background-color: #fdf8f3;
-    color: #000;
-}
-
-/* Header styles */
-header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    text-justify: auto;
-    text-align: ;
-    font-size: 15px;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    z-index: 99;
-    padding: 10px 10px;
-    top: 0;
-    box-shadow: 0 0 10px #000;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-header .search-box form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
-}
-
-header .search-box input {
-    width: 100%;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 10px;
-    text-align: center;
-    text-justify: auto;
-    transition: 0.3s ease;
-}
-
-header .search-box input:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-header .search-box button {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #007BFF;
-    border: none;
-    color: white;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 18px;
-    transition: 0.3s ease;
-}
-
-header .search-box button:hover {
-    background: #0056b3;
-}
-
-/* Social Media Icons */
-header ul li a {
-    margin: 0 5px;
-    color: #007BFF;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-header ul li a:hover {
-    color: #0056b3;
-}
-
-/* Responsive Search Box Styles */
-@media (max-width: 768px) {
-    header .search-box form {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    header ul li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    header ul li form {
-        margin-top: 10px;
-    }
-
-    header .search-box input {
-        width: 90%;
-    }
-}
-
-
-#chk1 {
-    display: none;
-}
-
-header .logo img{
-    flex: ;
-    color: #fff;
-    height: 120px;
-    width: 120px;
-    justify-content: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-header .search-box {
-    flex: 1;
-    position: relative;
-}
-
-header ul li .search-box input {
-    width: 100%;
-    height: 40px;
-    border: none;
-    outline: none;
-    background: #f2f2f2;
-    border-radius: 30px;
-    color: gray;
-    font-size: 16px;
-    text-align: center;
-}
-
-.search-box button {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    border: none;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background: green;
-}
-
-header ul {
-    flex: 2;
-    display: flex;
-    justify-content: space-between;
-}
-
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 10px 15px;
-}
-
-header ul li a:hover {
-    border-bottom: 2px solid rgb(19, 212, 19);
-}
-
-header .menu {
-    font-size: 1.5em;
-    display: none;
-    cursor: pointer;
-}
-
-header .menu label i {
-    font-size: 1em;
-    color: #fff; 
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-
-header .menu label i:hover {
-    color: #0078D4;
-}
-
-/* Responsive styles */
-@media (max-width: 1000px) {
-    header ul {
-        position: fixed;
-        top: 100px;
-        font-size: 20px;
-        right: -100%;
-        background: rgba(0, 0, 0, 0.5);
-        height: calc(100vh - 100px);
-        width: 70%;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
-        transition: right 0.3s ease-in-out;
-    }
-
-    header .menu {
-        display: block;
-    }
-
-    header .menu label {
-        cursor: pointer;
-    }
-    
-
-    #chk1:checked ~ ul {
-        right: 0;
-    }
-    
-    header .menu label i:hover {
-        color: #0078D4; 
-    }
-
-    .search-box {
-        padding-bottom: 50px;
-    }
-}
-
-
-
-main {
-    padding: 10px;
-    flex: 1;
-    width: 260px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.grid {
-    display: grid;
-    justify-content: center;
-}
-
-/*Description Box*/
-.container{
-    background: linear-gradient(45deg,#FBF9FA,#0056b3);
-    padding: 8%;
-    padding-bottom: 100px;
-
-}
-
-.container .heading{
-    text-align: center;
-    padding-bottom: 15px;
-    color: #fff;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    font-size: 50px;
-}
-
-.container .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 15px;
-
-}
-
-.container .box-container .box {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    background: #fff;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.container .box-container .box h3{
-    color: #444;
-    font-size: 22px;
-    padding: 10px 0;
-}
-
-.container .box-container .box p{
-    color: #777;
-    font-size: 16px;
-    line-height: 1.8;
-    text-justify: auto;
-    text-align: justify;
-}
-
-.container .box-container .box img{
-    height: 80px;
-}
-
-.container .box-container .box .btn{
-    margin-top: 10px;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    font-size: 17px;
-    border-radius: 5px;
-    padding: 8px 25px;
-}
-
-.container .box-container .box .btn:hover{
-    letter-spacing: 1px;
-}
-
-.container .box-container .box:hover{
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, .3);
-    transform: scale(1.02);
-}
-
-@media (max-width:768px){
-    .container{
-        padding: 20px;
-    }
-}
-
-/*newspaper website link*/
-.newspaper-grid {
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    grid-template-rows: repeat();
-    gap: 10px;
-    padding: 20px;
-  }
-  
-  .newspaper-grid a {
-    font-family: "myfont";
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #ecf0f1;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    display: flexbox ;
-    height: 80px;
-    width: 150px;
-    transition: background-color 0.3s, color 0.3s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .newspaper-grid a:hover {
-    background-color: #3498db;
-    color: #fff;
-    transform: scale(1.03);
-  }
-
-  .grid-header{
-    text-align: center;
-    color: #f4f4f4;
-    background-color: #3498db;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  #web{
-    text-decoration: dotted;
-    
-  }
-  .grid-header:hover{
-    background-color: #ecf0f1;
-    color: #3498db;
-  }
-  
-  @media (max-width: 768px) {
-    .newspaper-grid {
-      grid-template-columns: repeat(2, auto);
-      
-    }
-    
-  }
-  
-  @media (max-width: 576px) {
-    .newspaper-grid {
-      grid-template-columns: repeat(2,auto);
-      
-    }
-
-  }
-  
-
-/*about*/
-div.about {
-    background-color: rgba(93, 145, 45, 0.801);
-    color: #160505;
- text-justify: auto;   
- padding: 10px 20px;
-    text-align: center;
-    
-}
-
-
-header h1 {
-    margin: 0;
-}
-
-/* Footer */
-footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.795);
-    color: #ccc;
-    padding: 40px 10px;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; 
-}
-
-.logo2 {
-    width: 80px;
-    margin-bottom: 0px;
-}
-
-footer p {
-    margin: 0;
-    line-height: 1.5;
-    text-align: justify; 
-}
-
-.newsletter {
-    width: ;
-    max-width: 400px;
-}
-
-.newsletter h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    background: #0056b3;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-    
-}
-
-footer form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-footer form .far {
-    font-size: 18px;
-    margin-right: 10px;
-    color: #0078D4;
-}
-
-footer form input {
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    outline: none;
-    border: 0;
-}
-
-footer form button {
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-footer form button .fas {
-    font-size: 16px;
-    color: #ccc;
-
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.social-icons .fab {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    cursor: pointer;
-}
-
-hr {
-    width: 90%;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-}
-
-footer .copyright {
-    font-size: 12px;
-    text-align: center;
-}
-
-
-@media (max-width: 768px) {
-    .logo2 {
-        width: 60px;
-    }
-
-    .social-icons .fab {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 16px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px 5px;
-        font-size: 12px;
-    }
-
-    hr {
-        width: 100%;
-    }
-
-    footer .copyright {
-        font-size: 10px;
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; 
-    }
-
-    .grid {
-        margin: 0%;
-        align-items: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrika Ghar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Favicon5.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="chk1">
+        <div class="logo">
+            <a href="#"><img src="Patrikaghar-logo.png" alt="পত্রিকা ঘর"></a>
+            
+        </div>
         
+        <ul>
+            <li><a href="index.html">মূল-পাতা</a></li>
+            <li><a href="epaper.html">ইপেপার</a></li>
+            <li><a href="email.html">পত্রিকায়-লিখুন</a></li>
+            <li><a href="event.html">ইভেন্ট</a></li>
+            <li><a href="contact.html">যোগাযোগ</a></li>
+            <li>
+                <div class="search-box">
+                    <form action="index.html" method="GET" id="searchForm">
+                        <input type="text" name="search" id="srch" placeholder="Search here...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars menu icon"></i>
         
-    }
-}
+            </label>
+        </div>
+     </header>
+     
+      
+    
+    <!--About Us-->
+    
+    <div class="aboutbox">
+        <div class="containertwo">
+            <div class="headingabout"><h1>পত্রিকাঘর</h1></div>
+            <div class="content">
+                বাংলাদেশ, দক্ষিণ এশিয়ায় অবস্থিত একটি দেশ, সমৃদ্ধ সংস্কৃতি ও ইতিহাসের দেশ। সুবজ ল্যান্ডস্কেপ, প্রবাহিত উৎসব এবং উষ্ণ আতিথেয়তার জন্য পরিচিত। বাংলাদেশ প্রধান একটি গন্তব্য যা দক্ষিণদের অভিজ্ঞতা প্রদান করে।
+                দেশের বৃহত্তম বনভূমি এবং গঙ্গা নদী দ্বারা তৈরি করা হয়েছে, যা এর বিশাল ব-দ্বীপের মধ্যে দিয়ে প্রবাহিত হয়। নদী, খাল এবং জলাভূমির একটি নেটওয়ার্ক তৈরি করে যা বিভিন্ন উদ্ভিদ এবং প্রাণীজগতকে সহায়তা করে। সুন্দরবন, ইউনেস্কোর ওয়ার্ল্ড হেরিটেজ সাইট, বিশ্বের বৃহত্তম ম্যানগ্রোভ বন এবং এটি বেঙ্গল টাইগার, কুমির এবং বিভিন্ন প্রজাতির প্রাণীর আবাসস্থল।
+            </div>
+            <a href="email.html" target="_blank"><div class="author">লেখা পাঠান</div></a>
+        </div>
+        </div>
+
+    <!--About Box-->
+    <div class="container">
+          <h1 class="heading" id="des">পত্রিকাঘর</h1>
+       <div class="box-container">
+        <div class="box">
+            <img src="newspaper.svg">
+            <h3>ইপেপার</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, rem aspernatur quisquam suscipit incidunt aliquid, doloribus quibusdam facilis cum ullam voluptatem non consequatur, architecto vel eligendi? Voluptatum a repellendus ipsum!</p>
+            <a href="" class="btn">More</a>
+        </div>
+
+        <div class="box">
+            <img src="envelope-plus.svg">
+            <h3>লেখা পাঠান</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, rem aspernatur quisquam suscipit incidunt aliquid, doloribus quibusdam facilis cum ullam voluptatem non consequatur, architecto vel eligendi? Voluptatum a repellendus ipsum!</p>
+            <a href="" class="btn">More</a>
+        </div>
+          
+
+        <div class="box">
+            <img src="person-lines-fill.svg">
+            <h3>পত্রিকা যোগ করুন</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, rem aspernatur quisquam suscipit incidunt aliquid, doloribus quibusdam facilis cum ullam voluptatem non consequatur, architecto vel eligendi? Voluptatum a repellendus ipsum!</p>
+            <a href="" class="btn">More</a>
+        </div>
+
+
+        <div class="box">
+            <img src="calendar-event.svg">
+            <h3>ইভেন্ট</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, rem aspernatur quisquam suscipit incidunt aliquid, doloribus quibusdam facilis cum ullam voluptatem non consequatur, architecto vel eligendi? Voluptatum a repellendus ipsum!</p>
+            <a href="" class="btn">More</a>
+        </div>
+    
+    </div>
+
+
+    </div>
+    
+
+<!--Newpaper Website Link-->
+    <main>
+        <section class="grid">
+            <div class="grid-header"><h1>বাংলাদেশের দৈনিক পত্রিকার <a id="web">Website</a></h1></div>
+            <div class="newspaper-grid">
+                <a href="https://www.jugantor.com/" target="_blank">দৈনিক যুগান্তর</a>
+                <a href="https://www.bhorerkagoj.com/" target="_blank">দৈনিক ভোরের কাগজ</a>
+                <a href="https://samakal.com/" target="_blank">দৈনিক সমকাল</a>
+                <a href="https://kholakagojbd.com/" target="_blank">দৈনিক খোলাকাগজ</a>
+                <a href="https://www.ittefaq.com.bd/" target="_blank">দৈনিক ইত্তেফাক</a>
+                <a href="https://www.bd-pratidin.com/" target="_blank">দৈনিক বাংলাদেশ প্রতিদিন</a>
+                <a href="https://sokalerbani.com/" target="_blank">দৈনিক সকালের বানী</a>
+                <a href="https://www.bangladesherkhabor.net/" target="_blank">দৈনিক বাংলাদেশের খবর</a>
+                <a href="https://dailyjanobani.com/" target="_blank">দৈনিক জনবানী</a>
+                <a href="https://www.khaborerkagoj.com/" target="_blank">দৈনিক খবরের কাগজ</a>
+                <a href="https://www.kalerkantho.com/" target="_blank">দৈনিক কালের কন্ঠ</a>
+                <a href="https://www.ajkerpatrika.com/" target="_blank">দৈনিক আজকের পত্রিকা</a>
+                <a href="https://dailysabujbangla.com/" target="_blank">দৈনিক সবুজ বাংলা</a>
+                <a href="https://www.dainikamadershomoy.com/" target="_blank">দৈনিক আমাদের সময়</a>
+                <a href="https://www.jaijaidinbd.com/" target="_blank">দৈনিক যায়যায়দিন</a>
+                <a href="https://www.manobkantha.com.bd/" target="_blank">দৈনিক মানবকন্ঠ</a>
+                <a href="https://dainikazadi.net/" target="_blank">দৈনিক আজাদী</a>
+                <a href="https://purbodesh.com/" target="_blank">দৈনিক পূর্বদেশ</a>
+                <a href="https://www.dailyjanakantha.com/" target="_blank">দৈনিক জনকন্ঠ</a>
+                <a href="https://www.dailynayadiganta.com" target="_blank">দৈনিক নয়া দিগন্ত</a>
+                <a href="https://www.deshrupantor.com/" target="_blank">দৈনিক দেশ রূপান্তর</a>
+                <a href="https://dailysangram.com/" target="_blank">দৈনিক সংগ্রাম</a>
+                <a href="https://protidinerbangladesh.com" target="_blank">দৈনিক প্রতিদিনের বাংলাদেশ</a>
+                <a href="https://dailyinqilab.com/" target="_blank">দৈনিক ইনকিলাব</a>
+                <a href="https://www.prothomalo.com/" target="_blank">দৈনিক প্রথম আলো</a>
+                <a href="https://epaper.dainikbangla.com.bd/" target="_blank">দৈনিক বাংলা</a>
+                <a href="https://www.kalbela.com/" target="_blank">দৈনিক কালবেলা</a>
+                <a href="https://www.protidinersangbad.com/" target="_blank">দৈনিক প্রতিদিনের সংবাদ</a>
+                <a href="https://bhorerdarpan.com/" target="_blank">দৈনিক ভোরের দর্পণ</a>
+                <a href="https://mzamin.com/" target="_blank">দৈনিক মানবজমিন</a>
+                <a href="https://sharebiz.net/" target="_blank">দৈনিক শেয়ার বিজ</a>
+                <a href="https://www.amarsangbad.com/" target="_blank">দৈনিক আমার সংবাদ</a>
+                <a href="https://www.bonikbarta.com/" target="_blank">দৈনিক বণিকবার্তা</a>
+                <a href="https://www.shomoyeralo.com/" target="_blank">দৈনিক সময়ের আলো</a>
+                <a href="https://www.alokitobangladesh.com/" target="_blank">দৈনিক আলোকিত বাংলাদেশ</a>
+                <a href="https://suprobhat.com/" target="_blank">দৈনিক সুপ্রভাত</a>
+                <a href="https://shampratikdeshkal.com/" target="_blank">সাপ্তাহিক সাম্প্রতিক দেশকাল</a>
+
+
+                
+                
+              </div>
+              
+
+        </section>
+ 
+    </main>
+
+    <!---Faq-->
+    <div class="faq">
+         <div class="faq-title"><h1>পত্রিকায় লেখালেখি বিষয়ক সচরাচর জিজ্ঞাসিত প্রশ্ন</h1></div>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>পত্রিকায় কিভাবে লেখা পাঠাবো?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>লেখা ডাকে এবং ইমেইলে দুইভাবে পাঠানো যায়।ডাকে পাঠালে ডাকঘরে খামের মাধ্যমে পাঠানো যাবে।তবে বর্তমানে সবচেয়ে বেশি প্রচলিত হলো ইমেইলের মাধ্যমে লেখা পাঠানো।ইমেইলে লেখা পাঠালে মেইল বডিতে লেখা টাইপ করে পাঠানো যাবে।সাথে লেখার ডকুমেন্ট/ওয়ার্ড ফাইল সংযুক্ত করে দেওয়া উত্তম।ইমেইলের সাবজেক্টে অবশ্যই লেখার বিষয় কী তা লিখতে ভুলবেন না।আর লেখা পাঠানোর ইমেইল পেয়ে যাবেন <em>পত্রিকাঘরে</em>ই।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>লেখা পাঠানোর কতদিনের মধ্যে ছাপা হয়?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>ক্ষেত্রেবিশেষে বিভিন্ন পত্রিকায় ভিন্ন ভিন্ন সময়সীমা থাকে।তবে লেখা পাঠানোর পর এক মাস থেকে তিন মাস পর্যন্ত অপেক্ষা করা উত্তম।অধিকাংশ ক্ষেত্রে তিনমাসের মধ্যে লেখা না ছাপালে ধরে নিতে হবে লেখাটি মনোনীত হয়নি।তবে কিছু কিছু পত্রিকায় এক বছর দু'বছর পরও লেখা ছাপে।মূলত লেখা পাঠানোর মেইলে অধিক মেইলজটের কারণে এই সমস্যা হয়।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>লেখা ছাপা হলে কি পত্রিকা থেকে জানানো হয়?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>না।অধিকাংশ পত্রিকা থেকে লেখা ছাপা হলে জানানো হয় না।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>লেখা ছাপাতে কি টাকা লাগে?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>না।লেখা ছাপাতে টাকা লাগে না।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>লেখা প্রকাশিত হলে কি সম্মানী দেয়?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>জি।ক্ষেত্রবিশেষে সম্মানী দেয়া হয়।তবে সব লেখার জন্য সব পত্রিকায় সম্মানী দেয় না।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>একই লেখা একাধিক পত্রিকায় পাঠানো যাবে?</span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>না।একই লেখা একাধিক পত্রিকায় পাঠানো উচিত নয়।</p><hr class="faq-line">
+            </div>
+            </div>
+         </details>
+
+         <div class="faq-content"><details>
+            <summary>
+                <span>লেখায় কি শব্দসীমা আছে?
+                </span>
+                <b></b>
+            </summary>
+            <div class="answer">
+                <p>জি।দৈনিক পত্রিকা গুলোয় লেখায় শব্দসীমা থাকে।গল্পে ৫০০/১০০০-২০০০/৩০০০ শব্দ পর্যন্ত হয়ে থাকে।ফিচারে ৫০০-১০০০।কবিতা-ছড়া ১২/১৬ লাইনের মধ্যে প্রকাশিত হয়ে থাকে।</p>
+            </div>
+            </div>
+         </details>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#"><img src="Footerlogo.png" class="logo2" alt="Patrika ghar"></a>
+            <p>লিখুন পত্রিকাঘর হতে পত্রিকায়</p>
+            
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required name="" id="email-id">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+            
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;Patrikaghar - 2024 || All Rights Reserved || A project by <a href="https://github.com/thmahirofficial" target="_blank">@thmahir</a> & <a href="https://github.com/Mikdad-12" target="_blank">@mikdad</a></p>
+    </footer>
+
+    
+    
+</body>
+</html>
