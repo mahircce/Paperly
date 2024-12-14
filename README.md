@@ -24,7 +24,7 @@ Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi
    - Includes real-time updates displayed directly from the **Patrikaghar Facebook page**.  
 
 4. **Contact Developers**  
-   - Reach out to the creators of Patrikaghar via the **Contact** page for any suggestions, feedback, or queries.  
+   - Reach out to the creators of Patrikaghar via the **Contact** page for any suggestions, feedback or queries.  
 
 5. **More Features Coming Soon**  
    - Additional exciting features to enhance user experience are in the pipeline.  
@@ -33,7 +33,7 @@ Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi
 
 ## 📂 Project Structure
 
-- **Home Page**: Access newspaper websites, e-papers, and submission emails.  
+- **Home Page**: Access newspaper websites, e-papers and submission emails.  
 - **Event Page**: Get writing opportunities and advertisements from newspapers.  
 - **Contact Page**: Contact the developers for queries or suggestions.  
 
