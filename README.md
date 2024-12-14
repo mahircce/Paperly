@@ -1,6 +1,6 @@
 # 📰 Patrikaghar: The Ultimate Newspaper Hub of Bangladesh
 
-Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi newspaper websites, e-papers, and writing submission emails. Created as a project for the **Web Programming Course**, this platform serves as a hub for writers, readers, and anyone interested in the Bangladeshi newspaper ecosystem.
+Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi newspaper websites, e-papers, and writing submission emails. Created as a project for the **Web Programming Course**, this platform serves as a hub for writers, readers and anyone interested in the Bangladeshi newspaper ecosystem.
 
 ---
 
@@ -44,11 +44,11 @@ Explore the live version of the website:
 
 - **T H Mahir**  
   - GitHub: [@mahircce](https://github.com/mahircce)  
-  - Role: Lead Developer, UI/UX Designer  
+   
 
 - **Mikdad Mohammad**  
   - GitHub: [@mikdad-12](https://github.com/mikdad-12)  
-  - Role: Co-Developer, Backend Integration  
+   
 
 ---
 
