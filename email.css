@@ -383,7 +383,7 @@ nav a:hover {
     border-radius: 5px;
 }
 .email-box {
-    background-color: rgb(233, 222, 222);
+    background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
@@ -397,6 +397,7 @@ nav a:hover {
 }
 .email-box li {
     margin-bottom: 10px;
+    line-height: 1.5rem;
 }
 .email-box a {
     color: #7156d1;
@@ -410,11 +411,73 @@ nav a:hover {
 @media (max-width:768px) {
     
     .email-box{
-        font-size: 12px;
+        font-size: 13px;
     }
 
 }
 
+/* Coming Soon Box */
+.coming-soon-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa; /* Light Gray Background */
+    border: 2px solid #0078D4; /* Blue Border */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.coming-soon-box h2 {
+    font-size: 2rem;
+    color: #0078D4;
+    margin-bottom: 10px;
+
+}
+
+.coming-soon-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.soon-icon {
+    font-size: 3rem;
+    color: #0078D4;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 
