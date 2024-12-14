@@ -1,0 +1,594 @@
+body {
+    font-family:"myfont" ;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('albdnewspaper.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #333;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+/* Home page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+   
+    background-color: #f4f4f4;
+  }
+  
+@font-face {
+    font-family: myfont;
+    src: url(TiroBangla-Regular.ttf);
+}
+
+@font-face {
+    font-family: anekbangla regular;
+    src: url(AnekBangla_Condensed-Regular.ttf);
+}
+  
+@font-face{
+    font-family: anekbangla bold;
+    src: url(AnekBangla_Condensed-Bold.ttf);
+}
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: ;
+    background-color: #fdf8f3;
+    color: #000;
+}
+
+/* Header styles */
+header {
+    font-family: "myfont";
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-justify: auto;
+    text-align: ;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 99;
+    padding: 10px 10px;
+    top: 0;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header .search-box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    font-family: 'myfont';
+}
+
+header .search-box input {
+    font-family: 'myfont';
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 10px;
+    text-align: center;
+    text-justify: auto;
+    transition: 0.3s ease;
+}
+
+header .search-box input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+header .search-box button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0078D4;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+header .search-box button:hover {
+    background: #014981;
+}
+
+/* Social Media Icons */
+header ul li a {
+    margin: 0 5px;
+    color: #0078D4;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #0078D4;
+}
+
+/* Responsive Search Box Styles */
+@media (max-width: 768px) {
+    header .search-box form {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    header ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    header ul li form {
+        margin-top: 10px;
+    }
+
+    header .search-box input {
+        width: 90%;
+    }
+}
+
+
+#chk1 {
+    display: none;
+}
+
+header .logo img{
+    flex: ;
+    color: #fff;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header .search-box {
+    flex: 1;
+    position: relative;
+}
+
+header ul li .search-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgb(13, 0, 128);
+}
+
+header ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid rgb(236, 241, 236);
+}
+
+header .menu {
+    font-size: 1.5em;
+    display: none;
+    cursor: pointer;
+}
+
+header .menu label i {
+    font-size: 1em;
+    color: #fff; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+header .menu label i:hover {
+    color: #0078D4;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+    header ul {
+        position: fixed;
+        top: 100px;
+        font-size: 20px;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        height: calc(100vh - 100px);
+        width: 70%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        transition: right 0.3s ease-in-out;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    header .menu label {
+        cursor: pointer;
+    }
+    
+
+    #chk1:checked ~ ul {
+        right: 0;
+    }
+    
+    header .menu label i:hover {
+        color: #0078D4; 
+    }
+
+    .search-box {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* Coming Soon Box */
+.coming-soon-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f9fa; /* Light Gray Background */
+    border: 2px solid #0078D4; /* Blue Border */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.coming-soon-box h2 {
+    font-size: 2rem;
+    color: #0078D4;
+    margin-bottom: 10px;
+
+}
+
+.coming-soon-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.soon-icon {
+    font-size: 3rem;
+    color: #0078D4;
+    margin: 20px 0;
+    animation: pulse 1.5s infinite;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: #ccc;
+    padding: 40px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.logo2 {
+    
+    width: 80px;
+    margin-bottom: 0px;
+}
+
+footer p {
+    margin: 0;
+    
+    line-height: 1.5;
+    text-align: justify; 
+}
+
+footer p a {
+    color: #ccc ;
+
+}
+
+footer p a:hover{
+    color: #ecf0f1;
+    text-transform: uppercase;
+
+}
+
+.newsletter {
+    width: ;
+    max-width: 400px;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background: #0056b3;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    
+}
+
+footer form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer form .far {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #0078D4;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    outline: none;
+    border: 0;
+}
+
+footer form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+footer form button .fas {
+    font-size: 16px;
+    color: #ccc;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+footer .copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .logo2 {
+        width: 60px;
+    }
+
+    .social-icons .fab {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 5px;
+        font-size: 12px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    footer .copyright {
+        font-size: 10px;
+    }
+}
+
+
+.event-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.event-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+.event-header h1 {
+    font-size: 2rem;
+    color: #fefeff;
+    text-shadow: 2px 4px 8px #b6bdc5;
+}
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.writing-ads {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.writing-ads h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0078D4;
+}
+.facebook-iframe {
+    margin-top: 20px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.fb-page h2{
+    background: #ffffff;
+    color: #0078D4fe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-decoration: none;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    text-align: center;
+
+} 
+
+
+.facebook-iframe a {
+    text-decoration: none;
+}
+
+.facebook-iframe h2:hover{
+    background-color: #0078D4;
+    color: #ecf0f1;
+    
+}
+
+iframe {
+    width: 300px;
+    max-width: 500px;
+    border: 3px #0078D4;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 2px 6px 10px rgba(114, 105, 105, 0.6);
+}
+@media (max-width: 768px){
+    iframe{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .grid {
+        margin: 0%;
+        align-items: center;
+        
+        
+    }
+}
