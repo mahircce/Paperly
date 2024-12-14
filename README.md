@@ -1,4 +1,4 @@
-# 📰 ![Patrikaghar Logo(Patrikaghar-logo.png) Patrikaghar: The Ultimate Newspaper Hub of Bangladesh
+# 📰 ![Patrikaghar Logo](Patrikaghar-logo.png) Patrikaghar: The Ultimate Newspaper Hub of Bangladesh
 
 Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi newspaper websites, e-papers, and writing submission emails. Created as a project for the **Web Programming Course**, this platform serves as a hub for writers, readers and anyone interested in the Bangladeshi newspaper ecosystem.
 
