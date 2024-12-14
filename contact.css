@@ -500,7 +500,7 @@ header .menu label i:hover {
     margin-top: 12px;
     margin-bottom: 1px;
 }
-.right-sight .button input[type="button"]{
+.right-sight .button input[type="submit"]{
     color: #fff;
     font-size: 18px;
     outline: none;
@@ -511,7 +511,7 @@ header .menu label i:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.right-sight .button input[type="button"]:hover{
+.right-sight .button input[type="submit"]:hover{
     background: #666;
 }
 @media (max-width: 950px) {
