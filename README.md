@@ -1,4 +1,8 @@
-# 📰 ![Patrikaghar Logo](Favicon5.png) Patrikaghar: The Ultimate Newspaper Hub of Bangladesh
+# 📰 <p align="center">
+  <img src="Patrikaghar-logo.png" alt="Patrikaghar Logo" width="200" height="200">
+</p>
+
+## Patrikaghar: The Ultimate Newspaper Hub of Bangladesh
 
 Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi newspaper websites, e-papers, and writing submission emails. Created as a project for the **Web Programming Course**, this platform serves as a hub for writers, readers and anyone interested in the Bangladeshi newspaper ecosystem.
 
@@ -44,11 +48,11 @@ Explore the live version of the website:
 
 - **T H Mahir**  
   - GitHub: [@mahircce](https://github.com/mahircce)  
-   
+    
 
 - **Mikdad Mohammad**  
   - GitHub: [@mikdad-12](https://github.com/mikdad-12)  
-   
+  
 
 ---
 
@@ -62,5 +66,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 We welcome contributions!  
 Feel free to submit issues or pull requests to help improve Patrikaghar.
-
-
