@@ -1,5 +1,5 @@
 # 📰 <p align="center">
-  <img align="center" src="Favicon5.png" alt="Patrikaghar Logo" width="200" height="200">
+  <img src="Favicon5.png" alt="Patrikaghar Logo" width="200" height="200">
 </p>
 
 ---
