@@ -42,7 +42,7 @@ Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi
 ## 💻 Live Demo
 
 Explore the live version of the website:  
-[**Patrikaghar Website**](https://atrikaghar.site/)
+[**Patrikaghar Website**](https://patrikaghar.site/)
 
 ---
 
