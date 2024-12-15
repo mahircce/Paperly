@@ -42,7 +42,7 @@ Welcome to **Patrikaghar**, a centralized platform for accessing all Bangladeshi
 ## 💻 Live Demo
 
 Explore the live version of the website:  
-[**Patrikaghar GitHub Pages**](https://mahircce.github.io/Patrikaghar/)
+[**Patrikaghar Website**](https://atrikaghar.site/)
 
 ---
 
@@ -50,7 +50,7 @@ Explore the live version of the website:
 
 - **T H Mahir**  
   - GitHub: [@mahircce](https://github.com/mahircce)  
-    
+  - Biolink: [@thmahir](https://bio.link/thmahir)  
 
 - **Mikdad Mohammad**  
   - GitHub: [@mikdad-12](https://github.com/mikdad-12)  
